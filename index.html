@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mustapha Gbanie - Web Developer CV</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#005037',
+                        secondary: '#008040',
+                        dark: '#004d26',
+                        light: '#e6f2ed',
+                        accent: '#00994c',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'system-ui', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <style type="text/tailwindcss">
+        @layer utilities {
+            .content-auto {
+                content-visibility: auto;
+            }
+            .a4-page {
+                width: 210mm;
+                min-height: 297mm;
+                margin: 0 auto;
+                box-shadow: 0 0 5px rgba(0,0,0,0.1);
+                overflow: hidden;
+            }
+            @media print {
+                body { background: #FFFFFF !important; margin: 0 !important; padding: 0 !important; }
+                .a4-page { width: 100% !important; height: auto !important; box-shadow: none !important; margin: 0 !important; }
+                .no-print { display: none !important; }
+                * { -webkit-print-color-adjust: exact !important; print-color-adjust: exact !important; }
+            }
+            @media (max-width: 210mm) {
+                .a4-page { width: 100%; min-height: auto; }
+            }
+            .progress-bar {
+                height: 8px;
+                border-radius: 4px;
+                background: #DDDDDD;
+                overflow: hidden;
+            }
+            .progress-fill {
+                height: 100%;
+                background: linear-gradient(90deg, #0EA921, #00CC1A);
+                border-radius: 4px;
+            }
+        }
+    </style>
+</head>
+<body class="bg-gray-100 font-sans">
+    <div class="a4-page bg-white relative flex flex-col md:flex-row">
+        <!-- LEFT SIDEBAR -->
+        <div class="w-full md:w-[38%] bg-primary text-white p-6 flex flex-col items-center">
+            <!-- Profile Photo -->
+            <div class="w-[180px] h-[180px] rounded-full overflow-hidden border-[6px] border-white/20 mb-4">
+                <img src="display.png" alt="Mustapha Gbanie" class="w-full h-full object-cover">
+            </div>
+
+            <!-- CONTACT SECTION -->
+            <div class="w-full mt-6">
+                <h3 class="text-xl font-bold border-b-2 border-white/30 pb-2 flex items-center gap-2">
+                    <i class="fa fa-user-circle"></i> CONTACT
+                </h3>
+                <ul class="mt-3 space-y-2 text-sm">
+                    <li class="flex items-center gap-2">
+                        <i class="fa fa-phone"></i> +232 31762892
+                    </li>
+                    <li class="flex items-center gap-2 break-all">
+                        <i class="fa fa-envelope"></i> officialmustapha44@gmail.com
+                    </li>
+                    <li class="flex items-center gap-2">
+                        <i class="fa fa-map-marker"></i> Kenema, Sierra Leone
+                    </li>
+                    <li class="flex items-center gap-2 break-all">
+                        <i class="fa fa-globe"></i> mustapha-official.github.io/ Biography_Mustapha_Gbanie/
+                    </li>
+                    <li class="flex items-center gap-2 break-all">
+                        <i class="fa fa-globe"></i> mustapha-official.github.io/ Autobiography_Mustapha_Gbanie/
+                    </li>
+                    <li class="flex items-center gap-2 break-all">
+                        <i class="fa fa-linkedin"></i> linkedin.com/in/ mustapha-gbanie-friendly-dev
+                    </li>
+                </ul>
+            </div>
+
+            <!-- SKILLS SECTION -->
+            <div class="w-full mt-8">
+                <h3 class="text-xl font-bold border-b-2 border-white/30 pb-2 flex items-center gap-2">
+                    <i class="fa fa-cog"></i> SKILLS
+                </h3>
+                <ul class="mt-3 space-y-1 text-sm">
+                    <li class="flex items-center gap-2"><i class="fa fa-check text-accent"></i> HTML</li>
+                    <li class="flex items-center gap-2"><i class="fa fa-check text-accent"></i> CSS</li>
+                    <li class="flex items-center gap-2"><i class="fa fa-check text-accent"></i> Microsoft Word</li>
+                    <li class="flex items-center gap-2"><i class="fa fa-check text-accent"></i> Microsoft Excel</li>
+                    <li class="flex items-center gap-2"><i class="fa fa-check text-accent"></i> Microsoft PowerPoint</li>
+                    <li class="flex items-center gap-2"><i class="fa fa-check text-accent"></i> Microsoft Access</li>
+                    <li class="flex items-center gap-2"><i class="fa fa-check text-accent"></i> Windows 10 & 11 Troubleshooting</li>
+                    <li class="flex items-center gap-2"><i class="fa fa-check text-accent"></i> Android Mobile Troubleshooting</li>
+                </ul>
+            </div>
+
+            <!-- LANGUAGES SECTION -->
+            <div class="w-full mt-8">
+                <h3 class="text-xl font-bold border-b-2 border-white/30 pb-2 flex items-center gap-2">
+                    <i class="fa fa-globe"></i> LANGUAGES
+                </h3>
+                <div class="mt-3 space-y-3 text-sm">
+                    <div>
+                        <div class="flex justify-between mb-1">
+                            <span>Mende</span>
+                            <span>Fluent</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill w-[100%]"></div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="flex justify-between mb-1">
+                            <span>Krio</span>
+                            <span>Fluent</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill w-[100%]"></div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="flex justify-between mb-1">
+                            <span>English</span>
+                            <span>Advanced</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill w-[85%]"></div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="flex justify-between mb-1">
+                            <span>Hindi</span>
+                            <span>Beginner</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill w-[30%]"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- RIGHT MAIN CONTENT -->
+        <div class="w-full md:w-[62%] p-6 text-gray-800 relative">
+            <!-- Background Watermark -->
+            <div class="absolute top-0 right-0 opacity-5 text-[120px] font-bold text-gray-300 pointer-events-none">
+                <i class="fa fa-globe"></i>
+            </div>
+
+            <!-- HEADER -->
+            <div class="mb-6 text-center md:text-left">
+                <h1 class="text-[clamp(2.2rem,5vw,3.2rem)] font-black text-dark leading-tight">
+                    MUSTAPHA <span class="text-primary">GBANIE</span>
+                </h1>
+                <div class="inline-block bg-primary text-white px-6 py-1 rounded-full font-semibold text-lg mt-1 flex items-center gap-2">
+                    <i class="fa fa-code"></i> WEB DEVELOPER
+                </div>
+                <p class="italic text-gray-600 mt-3 text-lg">“ Bringing ideas to life in the digital space. ”</p>
+            </div>
+
+            <!-- PROFESSIONAL SUMMARY -->
+            <div class="mb-6">
+                <h2 class="text-xl font-bold text-dark border-b-2 border-secondary/20 pb-2 flex items-center gap-2">
+                    <i class="fa fa-user-circle text-primary"></i> PROFESSIONAL SUMMARY
+                </h2>
+                <p class="mt-2 text-sm leading-relaxed">
+                    I have learned HTML and CSS and I am currently studying JavaScript. Using HTML and CSS, I can create beautiful, mobile-friendly UI designs. I have built several websites, and some are now visible on Google search engines.
+                </p>
+            </div>
+
+            <!-- EDUCATION -->
+            <div class="mb-6">
+                <h2 class="text-xl font-bold text-dark border-b-2 border-secondary/20 pb-2 flex items-center gap-2">
+                    <i class="fa fa-graduation-cap text-primary"></i> EDUCATION
+                </h2>
+                <div class="mt-2 bg-light p-3 rounded-lg text-sm space-y-2">
+                    <div class="flex gap-2">
+                        <i class="fa fa-graduation-cap text-secondary mt-1"></i>
+                        <span>Completed the WASSCE in 2024.</span>
+                    </div>
+                    <div class="flex gap-2">
+                        <i class="fa fa-book text-secondary mt-1"></i>
+                        <span>Currently studying B-Tech at the Eastern Technical University of Sierra Leone.</span>
+                    </div>
+                    <div class="flex gap-2">
+                        <i class="fa fa-laptop text-secondary mt-1"></i>
+                        <span>I also study web development independently through online tutorials and educational websites.</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- WORK EXPERIENCE -->
+            <div class="mb-6">
+                <h2 class="text-xl font-bold text-dark border-b-2 border-secondary/20 pb-2 flex items-center gap-2">
+                    <i class="fa fa-briefcase text-primary"></i> WORK EXPERIENCE
+                </h2>
+                <div class="mt-2 bg-light p-3 rounded-lg text-sm">
+                    <div class="flex gap-2">
+                        <i class="fa fa-rocket text-secondary mt-1"></i>
+                        <div>
+                            <p class="font-semibold">No Formal Work Experience</p>
+                            <p class="mt-1">Currently focused on personal projects and developing innovative ideas in the digital space while improving my web development skills.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CERTIFICATE -->
+            <div class="mb-6">
+                <h2 class="text-xl font-bold text-dark border-b-2 border-secondary/20 pb-2 flex items-center gap-2">
+                    <i class="fa fa-trophy text-primary"></i> CERTIFICATE
+                </h2>
+                <div class="mt-2 bg-light p-3 rounded-lg text-sm">
+                    <div class="flex gap-2">
+                        <i class="fa fa-certificate text-secondary mt-1"></i>
+                        <span>I am currently learning through online tutorials and educational platforms and have not yet obtained official certifications.</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ADDITIONAL INFORMATION -->
+            <div>
+                <h2 class="text-xl font-bold text-dark border-b-2 border-secondary/20 pb-2 flex items-center gap-2">
+                    <i class="fa fa-info-circle text-primary"></i> ADDITIONAL INFORMATION
+                </h2>
+                <div class="mt-3 grid grid-cols-2 md:grid-cols-4 gap-3 text-center text-sm">
+                    <div class="p-2">
+                        <i class="fa fa-code text-primary text-xl mb-1"></i>
+                        <p>Passionate about Web Development</p>
+                    </div>
+                    <div class="p-2">
+                        <i class="fa fa-mobile-phone text-primary text-xl mb-1"></i>
+                        <p>Create beautiful, mobile-friendly UI designs</p>
+                    </div>
+                    <div class="p-2">
+                        <i class="fa fa-globe text-primary text-xl mb-1"></i>
+                        <p>Building websites that are visible on Google search engines</p>
+                    </div>
+                    <div class="p-2">
+                        <i class="fa fa-line-chart text-primary text-xl mb-1"></i>
+                        <p>Always learning and improving every day</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="text-center p-4 no-print">
+        <button onclick="window.print()" class="bg-primary text-white px-6 py-2 rounded-lg hover:bg-dark transition">
+            <i class="fa fa-print"></i> Print CV
+        </button>
+    </div>
+</body>
+</html>
